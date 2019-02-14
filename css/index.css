@@ -35,18 +35,25 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
+.menu-content .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 7%;
+}
 .menu-content .links a {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: bold;
-  display: flex;
   height: 75px;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  width: 25%;
 }
-.menu-open {
-  display: none;
+.menu-content a:hover {
+  color: #222222;
 }
 .motto {
   color: #FFFFFF;
