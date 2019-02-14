@@ -5,15 +5,58 @@ RESET
 v2.0b1 | 201101 
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
-header {
+.header {
   width: 100%;
-  background-color: #999aa0;
+  background-color: #9da6b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12%;
+  height: 45px;
+}
+.header h1 {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+.hamburger {
+  display: block;
+}
+.hamburger-close {
+  display: none;
+}
+.menu-content {
+  display: block;
+  position: fixed;
+  top: 45px;
+  width: 78.4%;
+  height: 100vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: #9da6b1;
+  z-index: 2;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+.menu-content .links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-open {
+  display: none;
+}
+.motto {
+  color: #FFFFFF;
+  font-size: 4rem;
 }
 .jumbo-pic {
   width: 100%;
 }
 .footer-container {
-  background-color: #999aa0;
+  background-color: #9da6b1;
 }
 html,
 body,
