@@ -5,6 +5,16 @@ RESET
 v2.0b1 | 201101 
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
+header {
+  width: 100%;
+  background-color: #999aa0;
+}
+.jumbo-pic {
+  width: 100%;
+}
+.footer-container {
+  background-color: #999aa0;
+}
 html,
 body,
 div,
@@ -142,39 +152,6 @@ table {
   font-size: 62.5%;
 }
 body {
-  max-width: 800px;
-}
-header {
-  width: 100%;
-}
-.hamburger div {
-  width: 5%;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-}
-.cross {
-  right: 32px;
-  top: 32px;
-  width: 7%;
-  height: 32px;
-  opacity: 0.3;
-}
-.cross:hover {
-  opacity: 1;
-}
-.cross:before,
-.cross:after {
-  position: absolute;
-  left: 15px;
-  content: ' ';
-  height: 33px;
-  width: 2px;
-  background-color: #333;
-}
-.cross:before {
-  transform: rotate(45deg);
-}
-.cross:after {
-  transform: rotate(-45deg);
+  max-width: 960px;
+  margin: 0 auto;
 }
