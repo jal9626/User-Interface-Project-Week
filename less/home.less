@@ -31,7 +31,7 @@
     height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
     background-color: rgb(157, 166, 177);
     z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
-    // opacity: .9;
+    opacity: .9;
     .links  {
         display: flex;
         justify-content: center;  
@@ -63,10 +63,18 @@
     font-size: 4rem;
 }   
 
-  //Home Page Content
-
 .jumbo-pic {
     width: 100%;
+}
+
+  //Home Page Content
+
+.home-content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
 }
 
 .SJ-arch {
@@ -74,7 +82,7 @@
     justify-content: center;
     
     .SJ-content {
-        width: 45%;
+        width: 50%;
         line-height: 25px;
     }
 
@@ -102,12 +110,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1.5%;
     
     .futuristic-content {
-        width: 45%;
+        width: 50%;
         line-height: 25px;
-        margin-left: 2%;
+        margin-left: 4%;
         display: flex;
         flex-direction: column;
     }
@@ -136,14 +143,49 @@
     display: flex;
     flex-direction: column;
     margin-top: 90px;
-    width: 85%;
+    width: 100%;
     justify-content: center;
-    margin-left: 6%;
+
     h1 {
         font-weight: bold;
         font-size: 1.6rem;
         margin-bottom: 45px;
     }
+    img {
+        z-index: 1;
+    }
+    h2 {
+        background-color: rgb(213, 216, 219);
+        z-index: 2;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-left: 63%;
+        top: -50px;
+        width:37%;
+        height: 85px;
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+        border: 1px solid #FFFFFF;
+    }
+}
+
+.villas-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+    margin-left: 25%;
+
+    .p1 {
+       margin-bottom: 25px;
+       width: 45%;     
+    }
+    .p2 {
+       margin-bottom: 50px;
+       width: 45%;
+    }
+
 }
 
 .footer-container {

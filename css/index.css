@@ -34,6 +34,7 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   background-color: #9da6b1;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
+  opacity: 0.9;
 }
 .menu-content .links {
   display: flex;
@@ -65,12 +66,19 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .jumbo-pic {
   width: 100%;
 }
+.home-content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+}
 .SJ-arch {
   display: flex;
   justify-content: center;
 }
 .SJ-arch .SJ-content {
-  width: 45%;
+  width: 50%;
   line-height: 25px;
 }
 .SJ-arch h1 {
@@ -93,12 +101,11 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1.5%;
 }
 .futuristic .futuristic-content {
-  width: 45%;
+  width: 50%;
   line-height: 25px;
-  margin-left: 2%;
+  margin-left: 4%;
   display: flex;
   flex-direction: column;
 }
@@ -121,14 +128,45 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   display: flex;
   flex-direction: column;
   margin-top: 90px;
-  width: 85%;
+  width: 100%;
   justify-content: center;
-  margin-left: 6%;
 }
 .recent h1 {
   font-weight: bold;
   font-size: 1.6rem;
   margin-bottom: 45px;
+}
+.recent img {
+  z-index: 1;
+}
+.recent h2 {
+  background-color: #d5d8db;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-left: 63%;
+  top: -50px;
+  width: 37%;
+  height: 85px;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  border: 1px solid #FFFFFF;
+}
+.villas-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 25px;
+  margin-left: 25%;
+}
+.villas-content .p1 {
+  margin-bottom: 25px;
+  width: 45%;
+}
+.villas-content .p2 {
+  margin-bottom: 50px;
+  width: 45%;
 }
 .footer-container {
   background-color: #9da6b1;
