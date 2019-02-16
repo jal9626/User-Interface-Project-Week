@@ -29,7 +29,7 @@
     top: 45px;
     width: 78.4%;
     height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
-    background-color: rgb(157, 166, 177);
+    background-color: @main-bg;
     z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
     opacity: .9;
     .links  {
@@ -58,10 +58,24 @@
     display: none;
 }
 
-.motto {
-    color: #FFFFFF;
-    font-size: 4rem;
-}   
+.image-container {
+    margin-bottom: -125px;
+    div {
+        z-index: 2;
+        position: relative;
+        top: -240px;
+        width: 50%;
+        margin-left: 8%;
+        line-height: 65px;
+    } 
+    .motto {
+        color: #FFFFFF;
+        font-size: 3.5rem;
+        font-weight: bold;
+    } 
+}
+
+  
 
 .jumbo-pic {
     width: 100%;
@@ -80,7 +94,7 @@
 .SJ-arch {
     display: flex;
     justify-content: center;
-    
+    align-items: center;
     .SJ-content {
         width: 50%;
         line-height: 25px;
@@ -111,6 +125,10 @@
     justify-content: center;
     align-items: center;
     
+    img {
+        width: 49%;
+    }
+
     .futuristic-content {
         width: 50%;
         line-height: 25px;
@@ -254,7 +272,7 @@
 }
 
 .footer-container {
-    background-color: rgb(157, 166, 177);
+    background-color: @main-bg;
     height: 250px;
     margin-bottom: 30px; 
     color: #FFFFFF;
@@ -282,7 +300,7 @@
     .email-input{
         
         input {
-            color: rgb(157, 166, 177);
+            color: @main-bg;
             width: 95%;
             border-radius: 3px;
             border: none;

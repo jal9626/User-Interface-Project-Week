@@ -31,7 +31,7 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   width: 78.4%;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
-  background-color: #9da6b1;
+  background-color: #858585;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
   opacity: 0.9;
@@ -59,9 +59,21 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .menu-open {
   display: none;
 }
-.motto {
+.image-container {
+  margin-bottom: -125px;
+}
+.image-container div {
+  z-index: 2;
+  position: relative;
+  top: -240px;
+  width: 50%;
+  margin-left: 8%;
+  line-height: 65px;
+}
+.image-container .motto {
   color: #FFFFFF;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 .jumbo-pic {
   width: 100%;
@@ -76,6 +88,7 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .SJ-arch {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .SJ-arch .SJ-content {
   width: 50%;
@@ -101,6 +114,9 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.futuristic img {
+  width: 49%;
 }
 .futuristic .futuristic-content {
   width: 50%;
@@ -232,7 +248,7 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   border: 1px solid #FFFFFF;
 }
 .footer-container {
-  background-color: #9da6b1;
+  background-color: #858585;
   height: 250px;
   margin-bottom: 30px;
   color: #FFFFFF;
@@ -257,7 +273,7 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   padding: 5% 5%;
 }
 .content-container .email-input input {
-  color: #9da6b1;
+  color: #858585;
   width: 95%;
   border-radius: 3px;
   border: none;
