@@ -7,16 +7,22 @@ NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
 .header {
   width: 100%;
-  background-color: #9da6b1;
+  background-color: #858585;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 12%;
   height: 45px;
 }
+@media (max-width: 500px) {
+  .header {
+    width: 100%;
+  }
+}
 .header h1 {
   color: #FFFFFF;
   font-size: 1.6rem;
+  z-index: 3;
 }
 .hamburger {
   display: block;
@@ -28,13 +34,18 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   display: block;
   position: fixed;
   top: 45px;
-  width: 78.4%;
+  width: 73.5%;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #858585;
-  z-index: 2;
+  z-index: 3;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
   opacity: 0.9;
+}
+@media (max-width: 500px) {
+  .menu-content {
+    width: 100%;
+  }
 }
 .menu-content .links {
   display: flex;
@@ -43,6 +54,11 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   flex-direction: column;
   height: 100vh;
   padding-left: 7%;
+}
+@media (max-width: 500px) {
+  .menu-content .links {
+    padding-left: 0%;
+  }
 }
 .menu-content .links a {
   color: #FFFFFF;
@@ -62,7 +78,12 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .image-container {
   margin-bottom: -125px;
 }
-.image-container div {
+@media (max-width: 500px) {
+  .image-container {
+    width: 100%;
+  }
+}
+.image-container .motto-container {
   z-index: 2;
   position: relative;
   top: -240px;
@@ -85,23 +106,38 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   flex-direction: column;
   margin-left: 5%;
 }
-.SJ-arch {
+.SJ-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.SJ-arch .SJ-content {
+@media (max-width: 500px) {
+  .SJ-container {
+    flex-direction: column-reverse;
+  }
+}
+.SJ-container .SJ-content {
   width: 50%;
   line-height: 25px;
 }
-.SJ-arch h1 {
+@media (max-width: 500px) {
+  .SJ-container .SJ-content {
+    width: 70%;
+  }
+}
+.SJ-container h1 {
   font-weight: bold;
   font-size: 1.6rem;
 }
-.SJ-arch p {
+@media (max-width: 500px) {
+  .SJ-container h1 {
+    padding-top: 30px;
+  }
+}
+.SJ-container p {
   margin: 20px 0;
 }
-.SJ-arch button {
+.SJ-container button {
   background-color: #FFFFFF;
   height: 45px;
   font-size: 0.8rem;
@@ -109,14 +145,29 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   width: 32%;
   border: 1.2px solid;
 }
+@media (max-width: 500px) {
+  .SJ-container button {
+    width: 100%;
+  }
+}
 .futuristic {
   margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .futuristic {
+    flex-direction: column;
+  }
+}
 .futuristic img {
   width: 49%;
+}
+@media (max-width: 500px) {
+  .futuristic img {
+    width: 96%;
+  }
 }
 .futuristic .futuristic-content {
   width: 50%;
@@ -125,9 +176,19 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .futuristic .futuristic-content {
+    width: 70%;
+  }
+}
 .futuristic h1 {
   font-weight: bold;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .futuristic h1 {
+    padding-top: 30px;
+  }
 }
 .futuristic p {
   margin: 20px 0;
@@ -139,6 +200,11 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   font-size: 1rem;
   width: 32%;
   border: 1.2px solid;
+}
+@media (max-width: 500px) {
+  .futuristic button {
+    width: 100%;
+  }
 }
 .recent {
   display: flex;
@@ -155,7 +221,13 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .recent img {
   z-index: 1;
 }
-.recent .villas {
+@media (max-width: 500px) {
+  .recent img {
+    height: 200px;
+    width: 100%;
+  }
+}
+.recent .villas-container {
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -164,7 +236,14 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   width: 37%;
   height: 85px;
 }
-.recent .villas h2 {
+@media (max-width: 500px) {
+  .recent .villas-container {
+    margin-left: 3.5%;
+    width: 93%;
+    top: -15px;
+  }
+}
+.recent .villas-container h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,9 +266,20 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   margin-bottom: 25px;
   width: 45%;
 }
+@media (max-width: 500px) {
+  .home-p .p1 {
+    width: 60%;
+  }
+}
 .home-p .p2 {
   margin-bottom: 75px;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .home-p .p2 {
+    width: 60%;
+    margin-bottom: 50px;
+  }
 }
 .outskirts {
   display: flex;
@@ -198,7 +288,7 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   width: 100%;
   justify-content: center;
 }
-.outskirts .outskirts-tab {
+.outskirts .outskirts-container {
   display: flex;
   justify-content: flex-start;
   position: relative;
@@ -206,7 +296,14 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   width: 37%;
   height: 85px;
 }
-.outskirts .outskirts-tab h2 {
+@media (max-width: 500px) {
+  .outskirts .outskirts-container {
+    margin-left: 3.5%;
+    width: 93%;
+    top: -15px;
+  }
+}
+.outskirts .outskirts-container h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,35 +314,32 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   letter-spacing: 4px;
   border: 1px solid #FFFFFF;
 }
-.recent {
+.middle-p {
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
-  width: 100%;
   justify-content: center;
-}
-.recent img {
-  z-index: 1;
-}
-.recent .villas {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  margin-left: 63%;
-  top: -50px;
-  width: 37%;
-  height: 85px;
-}
-.recent .villas h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #d5d8db;
+  line-height: 25px;
+  margin-left: 25%;
   width: 100%;
-  z-index: 2;
-  font-size: 1.6rem;
-  letter-spacing: 4px;
-  border: 1px solid #FFFFFF;
+}
+.middle-p .p1 {
+  margin-bottom: 25px;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .middle-p .p1 {
+    width: 60%;
+  }
+}
+.middle-p .p2 {
+  margin-bottom: 75px;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .middle-p .p2 {
+    width: 60%;
+    margin-bottom: 0px;
+  }
 }
 .footer-container {
   background-color: #858585;
@@ -266,11 +360,24 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .footer-container h3 {
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .footer-container {
+    margin-top: 25px;
+    width: 75%;
+    margin-left: 15%;
+    height: 100%;
+  }
+}
 .content-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 5% 5%;
+}
+@media (max-width: 500px) {
+  .content-container {
+    flex-direction: column;
+  }
 }
 .content-container .email-input input {
   color: #858585;
