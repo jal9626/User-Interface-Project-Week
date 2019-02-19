@@ -72,9 +72,6 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .menu-content a:hover {
   color: #222222;
 }
-.menu-open {
-  display: none;
-}
 .image-container {
   margin-bottom: -125px;
 }
