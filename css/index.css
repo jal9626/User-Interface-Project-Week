@@ -22,7 +22,6 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .header h1 {
   color: #FFFFFF;
   font-size: 1.6rem;
-  z-index: 3;
 }
 .hamburger {
   display: block;
@@ -71,6 +70,9 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 }
 .menu-content a:hover {
   color: #222222;
+}
+.menu-open {
+  display: none;
 }
 .image-container {
   margin-bottom: -125px;
