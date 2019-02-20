@@ -423,6 +423,45 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   width: 100%;
   font-size: 1rem;
 }
+.tab-section {
+  margin-top: 40px;
+}
+.tab-section .tabs {
+  margin-bottom: 40px;
+}
+.tabs-links {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-links button {
+  border: solid 1px;
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 45px;
+  width: 20%;
+}
+.tabs-item {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-item .tabs-item-description {
+  line-height: 25px;
+}
+.tabs-item .tabs-item-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.tabs-item .tabs-item-img {
+  width: 46.5%;
+  height: auto;
+  padding-bottom: 25px;
+}
+.tabs-item .tabs-p {
+  padding-right: 10%;
+  margin-bottom: 25px;
+}
 html,
 body,
 div,
