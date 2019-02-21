@@ -3,20 +3,30 @@
 .header {
     width: 100%;
     background-color: @main-bg;
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;
-    padding:0 8%;
+    // padding:0 8%;
     height: 45px;
     @media @phone {
         width: 100%;
     }
 }
 
-.header h1 {
+.SJ-container {
+  display: relative;
+   
+}
+
+.hamburger-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 45px;
+   padding: 0 8%;
+   
+   h1 {
     color: #FFFFFF;
     font-size: 1.6rem;
     width: 100%;
+    }
 }
 
 .hamburger {

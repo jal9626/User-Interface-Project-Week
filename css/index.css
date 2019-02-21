@@ -8,10 +8,6 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .header {
   width: 100%;
   background-color: #858585;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 8%;
   height: 45px;
 }
 @media (max-width: 500px) {
@@ -19,7 +15,17 @@ USE WITH CAUTION AND TEST WITH ABANDON */
     width: 100%;
   }
 }
-.header h1 {
+.SJ-container {
+  display: relative;
+}
+.hamburger-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  padding: 0 8%;
+}
+.hamburger-container h1 {
   color: #FFFFFF;
   font-size: 1.6rem;
   width: 100%;
@@ -444,6 +450,7 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .tabs-item {
   display: flex;
   justify-content: space-between;
+  display: none;
 }
 .tabs-item .tabs-item-description {
   line-height: 25px;
@@ -461,6 +468,9 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 .tabs-item .tabs-p {
   padding-right: 10%;
   margin-bottom: 25px;
+}
+.tabs-item-selected {
+  display: flex;
 }
 html,
 body,
