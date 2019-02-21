@@ -10,15 +10,25 @@ class Dropdown {
         // assign the reference to the ".dropdown-content" class found in the dropdown element
         this.content = this.element.querySelector('.menu-content');
         console.log(this.content);
-        this.hamburger = this.element.querySelector('.hamburger-close');
+        this.close = this.element.querySelector('.hamburger-close');
         console.log(this.hamburger);
         this.button.addEventListener('click', () => {
             this.toggleContent();
+        })
+        this.close.addEventListener('click', () => {
+            this.toggleContent2();
         })
     }
 
     toggleContent() {
         this.content.classList.toggle('menu-open');
+        this.button.style.display = 'none';
+        this.close.classList.toggle('hamburger-close');
+    }
+    toggleContent2() {
+        this.content.classList.toggle('menu-open');
+        this.button.style.display = 'block';
+        this.close.classList.toggle('hamburger-close');
     }
 
     
