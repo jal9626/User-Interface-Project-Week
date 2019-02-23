@@ -448,7 +448,6 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   width: 20%;
 }
 .tabs-item {
-  display: flex;
   justify-content: space-between;
   display: none;
 }
